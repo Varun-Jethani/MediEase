@@ -1,0 +1,145 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Gallery {% endblock %}
+
+{% block Styles %}
+<link rel="stylesheet" href="{% static 'assets/plugins/cube-portfolio/css/cubeportfolio.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/plugins/cube-portfolio/custom/custom-cubeportfolio.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<!-- Image title -->
+
+<div style="text-align: center; margin-top: 50px;">
+    <h2>GALLERY</h2>
+    </div>
+    <!-- End title  -->
+
+    <!--=== Cube-Portfdlio ===-->
+    <div class="cube-portfolio container" style="margin-top: 100px; margin-bottom: 60px;">
+
+
+    <div id="grid-container" class="cbp-l-grid-agency">
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/room1.jpg' %}" class="cbp-lightbox" data-title="Rooms for patients"><img src="{% static 'assets/img/gallery/room1.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">Rooms for patients</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/opd.jpg' %}" class="cbp-lightbox" data-title="OPD Area"><img src="{% static 'assets/img/gallery/opd.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">OPD Area</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/opd2.jpg' %}" class="cbp-lightbox" data-title="OPD Area 2"><img src="{% static 'assets/img/gallery/opd2.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">Opd area</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/parking.jpg' %}" class="cbp-lightbox" data-title="Parking Area"><img src="{% static 'assets/img/gallery/parking.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">Parking area</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/reception.jpg' %}" class="cbp-lightbox" data-title="Reception"><img src="{% static 'assets/img/gallery/reception.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">Reception</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/cath_lab.jpg' %}" class="cbp-lightbox" data-title="Cath laboratory"><img src="{% static 'assets/img/gallery/cath_lab.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">cath laboratory</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static 'assets/img/gallery/platinum_wing.jpg' %}" class="cbp-lightbox" data-title="Platinum Wing"><img src="{% static 'assets/img/gallery/platinum_wing.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">platinum wing</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    <!-- Image -->
+    <div class="cbp-item graphic">
+    <div class="cbp-caption " style="margin-bottom: 20px;">
+    <div class="cbp-caption-defaultWrap">
+    <a href="{% static "assets/img/gallery/Hospital.jpg" %}" class="cbp-lightbox" data-title="Hospital"><img src="{% static 'assets/img/gallery/Hospital.jpg' %}" alt="" ></a>
+    </div>
+    </div>
+    <div class="cbp-title-dark">
+    <div class="cbp-l-grid-agency-title">Hospital</div>
+    </div>
+    </div>
+    <!-- end image-->
+
+    </div><!--/end Grid Container-->
+    </div>
+    <!--=== End Cube-Portfdlio ===-->
+
+{% endblock %}
+
+{% block Scripts %}
+<!-- Scripts and JS -->
+<script type="text/javascript" src="{% static 'assets/plugins/jquery/jquery.min.js' %}"></script>
+
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="{% static 'assets/plugins/cube-portfolio/js/jquery.cubeportfolio.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'assets/plugins/cube-portfolio/js/cube-portfolio-3.js' %}"></script>
+<!-- end scripts and js -->
+{% endblock %}

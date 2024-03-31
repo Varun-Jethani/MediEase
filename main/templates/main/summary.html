@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Summary{% endblock %}
+
+{% block Styles %}
+<link rel="stylesheet" href="{% static 'assets/css/blog_timeline.css' %}">
+
+<style>
+    .bar {
+        width: 20px;
+        height: 150px;
+        float: left;
+        margin: 0 2px;
+        background-color: #4CAF50;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+{% if user.is_authenticated %}
+
+<h1>Simple Bar Graph</h1>
+
+<div class="container">
+
+<div class="bar" style="height: 200px;"></div>
+<div class="bar" style="height: 150px;"></div>
+<div class="bar" style="height: 100px;"></div>
+<div class="bar" style="height: 50px;"></div>
+
+</div>
+
+{% else %}
+
+{% endif %}
+
+{% endblock %}
+
