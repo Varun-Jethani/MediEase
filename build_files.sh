@@ -1,7 +1,7 @@
 
 echo "Build Start"
 python3.9 -m venv venv
-source venv/Scripts/activate
+source venv/bin/activate
 echo "Venv activated"
 pip install -r requirements.txt
 echo "Requirements installed"
