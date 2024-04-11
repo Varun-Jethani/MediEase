@@ -2,6 +2,10 @@
 {% load static %}
 {% block title %}About Page{% endblock %}
 
+{% block Styles %}
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
 
 <!-- About Heading -->
@@ -150,5 +154,71 @@
 						<!-- End Service Block v8 -->
 						</div>
 						<!--=== End About Section 3===-->
+						<div >
+							<section class="text-gray-600 body-font">
+								<div class="container px-5 py-24 mx-auto">
+								  <div class="flex flex-col text-center w-full mb-20">
+									<h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+									<p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
+								  </div>
+								  <div class="flex flex-wrap -m-4" style="margin-left: 90px;">
+									<div class="p-4 lg:w-1/2">
+									  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+										<img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="{% static 'images/stavan.jpg' %}">
+										<div class="flex-grow sm:pl-8">
+										  <h2 class="title-font font-medium text-lg text-gray-900">Stavan Mehta</h2>
+										  {% comment %}<h3 class="text-gray-500 mb-3">Backend Developer</h3>{% endcomment%}
+										  <p class="mb-4">2nd Year B.Tech CSE at Karnavati University</p>
+											</a>
+										  </span>
+										</div>
+									  </div>
+									</div>
+									{% comment %} <div class="p-4 lg:w-1/2">
+									  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+										<img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="{% static 'images/varun.jpg' %}">
+										<div class="flex-grow sm:pl-8">
+										  <h2 class="title-font font-medium text-lg text-gray-900">Varun Jethani</h2>
+										  <h3 class="text-gray-500 mb-3">Backend Developer and Presenter</h3>
+										  <p class="mb-4">2nd Year B.Tech CSE at Karnavati University</p>
+										</div>
+									  </div>
+									</div> {% endcomment %}
+									<div class="p-4 lg:w-1/2">
+									  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+										<img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="{% static 'images/atman.jpg' %}">
+										<div class="flex-grow sm:pl-8">
+										  <h2 class="title-font font-medium text-lg text-gray-900">Atman Mehta</h2>
+										 {% comment %} <h3 class="text-gray-500 mb-3">Frontend Developer</h3>{% endcomment%}
+										  <p class="mb-4">2nd Year B.Tech CSE at Karnavati University</p>
+										  </div>
+									  </div>
+									</div>
+									 <div class="p-4 lg:w-1/2">
+									  <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+										<img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="{% static 'images/astha.jpg' %}">
+										<div class="flex-grow sm:pl-8">
+										  <h2 class="title-font font-medium text-lg text-gray-900">Astha Patel</h2>
+										  {% comment %}<h3 class="text-gray-500 mb-3">UI/UX Designer</h3>{% endcomment%}
+										  <p class="mb-4">2nd Year B.Tech CSE at Karnavati University</p>
+										  </div>
+									  </div>
+									</div>
+								  
+								<div class="p-4 lg:w-1/2">
+									<div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+									  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="{% static 'images/yashvi.jpg' %}">
+									  <div class="flex-grow sm:pl-8">
+										<h2 class="title-font font-medium text-lg text-gray-900">Yashvi Patel</h2>
+										{% comment %}<h3 class="text-gray-500 mb-3">Tester and Report</h3>{% endcomment%}
+										<p class="mb-4">2nd Year B.Tech CSE at Karnavati University</p>
+										</div>
+									</div>
+								  </div> 
+								</div>
+							</div>
+							  </section>
+							</div>
+
 {% endblock %}
 

@@ -55,18 +55,19 @@ def contact(request):
             x = enquirycol.insert_one(enquiry)
             print(name, email, subject, number, message,x)
             text = f"{name}, your enquiry for '{subject}' has been recieved and will be processed soon. Thank you for contacting us. "
-            responseData = sms.send_message(
-            {
-                "from": "MediEase",
-                "to": number,
-                "text": text,
-            }
-            )
+            for i in range(2):
+                responseData = sms.send_message(
+                {
+                    "from": "MediEase",
+                    "to": number,
+                    "text": text,
+                }
+                )
 
-            if responseData["messages"][0]["status"] == "0":
-                print("Message sent successfully.")
-            else:
-                print(f"Message failed with error: {responseData['messages'][0]['error-text']}")
+                if responseData["messages"][0]["status"] == "0":
+                    print("Message sent successfully.")
+                else:
+                    print(f"Message failed with error: {responseData['messages'][0]['error-text']}")
 
             return render(request, 'main/contact.html', {'form': form, 'contact': True})
     else:
@@ -80,8 +81,8 @@ def terms(request):
     return render(request, 'main/terms.html')
 
 def summary(request):
-    generate_graph()
-    return render(request, 'main/graph.html')
+    html = generate_graph()
+    return render(request, 'main/graph.html',{'html':html})
 
 def gallery(request):
     return render(request, 'main/gallery.html')

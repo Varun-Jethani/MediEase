@@ -282,6 +282,19 @@
       <script type="text/javascript" src="{% static 'assets/plugins/jquery/jquery-migrate.min.js' %}"></script>
       <script type="text/javascript" src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
       <!-- JS Implementing Plugins -->
+      <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "15ef0d1b-c4cc-4bcb-b1a8-9cbf7594dac7", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "9d5130ca-226a-4492-b67a-5da12b79d265", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
 
       
 {% block Scripts %} {% endblock %}
