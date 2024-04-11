@@ -8,7 +8,7 @@ import datetime
 import os
 from dotenv import load_dotenv
 
-from .graphgen import generate_graph
+
 
 load_dotenv()
 password = os.getenv("MONGO_PASS")  #hide before push
