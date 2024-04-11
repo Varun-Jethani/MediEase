@@ -81,8 +81,7 @@ def terms(request):
     return render(request, 'main/terms.html')
 
 def summary(request):
-    html = generate_graph()
-    return render(request, 'main/graph.html',{'html':html})
+    return render(request, 'main/graph.html')
 
 def gallery(request):
     return render(request, 'main/gallery.html')
